@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navidad.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>YINCANA <br> OPERACIÓN POLVORÓN: EL DESAFÍO FINAL</h1>
+        <p>
+            ¿Tienes lo que hay que tener para salvar la Navidad en nuestra ciudad? Forma tu equipo, descifra los
+            enigmas
+            y hazte con el botín.
+        </p>
+        <div>
+            <p>DÍA: 26 de Diciembre</p>
+            <p>HORA: 18:00h</p>
+            <p>LUGAR: Ayuntamiento de Logroño</p>
+        </div>
+        <br>
+        <a href="#inscripcion">¡ACEPTAR EL RETO!</a>
+    </header>
+
+    <main>
+        <!--1.Explicacion-->
+        <section class="explicacion">
+            <article class="explicacion2">
+
+                <h2>LA MISIÓN: OPERACIÓN POLVORÓN</h2>
+                <p>
+                    La Navidad en nuestra ciudad está en peligro y solo los más rápidos pueden salvarla. El Grinch ha
+                    escondido el Gran Botín Navideño y ha dejado un rastro de acertijos por los lugares más emblemáticos
+                    del centro.
+                    <br><br>
+                    Tu misión, si decides aceptarla, es reunir a tu escuadrón, descifrar las pistas en tiempo récord y
+                    superar los desafíos físicos y mentales que encontrarás en cada parada. No es solo una carrera, es
+                    una prueba de ingenio y trabajo en equipo.
+                    <br>
+                    ¿Seréis los primeros en encontrar el botín o os quedaréis
+                    sin polvorones?
+                </p>
+                <ul>
+                    <li>
+                        Punto de encuentro: Plaza Mayor (Frente al Ayuntamiento).
+                    </li>
+                    <li>
+                        Equipamiento: Calzado cómodo, batería en el móvil y muchas ganas de correr.
+                    </li>
+                    <li>
+                        Premio: ¡Sorpresas exclusivas para los tres primeros equipos en completar la ruta!.
+                    </li>
+                </ul>
+            </article>
+            <img id="imagen-explicacion" src="./img/img2.png" alt="imagen de chicos con mapa">
+        </section>
+        <!--2.Fotos de otros años-->
+        <section>
+            <article class="otros-años">
+                <h2>ASÍ FUE EL AÑO PASADO</h2>
+                <div id="imagen-otros">
+                    <img src="./img/AP.3.png" alt="Jovenes reunidos en el ayuntamiento">
+                    <img src="./img/AP.4.png" alt="Jovenes saliendo del ayuntamiento">
+                    <img src="./img/AP.1.png" alt="Chicos buscando pistas">
+                    <img src="./img/AP.2.png" alt="Ganadores del evento">
+                </div>
+            </article>
+        </section>
+        <!--3.Requisitos para participar-->
+        <section>
+            <article class="requisitos">
+                <h2>REQUISITOS DE PARTICIPACIÓN</h2>
+                <ul>
+                    <li id="edad">
+                        EDAD: 14 a 30 años.
+                    </li>
+                    <li id="fisico">
+                        FÍSICO: Sin discapacidad física o lesiones graves.
+                    </li>
+                    <li id="padron">
+                        PADRÓN: Prioridad para personas empadronadas en Logroño.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!--4.Inscripción para el evento-->
+        <section class="inscripcion" id="inscripcion">
+            <h2>¡ALÍSTATE AHORA!</h2>
+            <form action="" method="post">
+                <fieldset id="personal">
+                    <legend>Datos Personales</legend>
+                    <div>
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Navajas Ramirez" required>
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="usuario@gmail.com" required>
+
+                        <label for="telf">Teléfono:</label>
+                        <input type="tel" id="telf" name="telf" pattern="[0-9]{9}" placeholder="666666666" required>
+                        <!--pattern indica que solo podran ser digitos del 0 al 9 y debe tener 9 caracteres-->
+
+                        <label for="fecha">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                </fieldset>
+                <fieldset id="equipo">
+                    <legend>Información de Equipo</legend>
+                    <p>¿Vas a participar en grupo?</p>
+                    <div>
+                        <div    id="circulito">
+                        <label><input type="radio" name="grupo" value="no" checked> Individual</label>
+                        <label><input type="radio" name="grupo" value="si"> En Grupo</label>
+                        </div>
+                        <br>
+                        <label for="equipo">Nombre del Equipo:</label>
+                        <input type="text" id="equipo" name="equipo" placeholder="Nombre de tu escuadrón">
+
+                        <label for="observaciones">Observaciones (Alergias, dudas...):</label>
+                    </div>
+                    <textarea id="observaciones" name="observaciones" rows="4" placeholder="Escribe aquí..."></textarea>
+                </fieldset>
+            </form>
+            <button type="submit">¡ENVIAR MI INSCRIPCIÓN!</button>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="./img/logo.png" alt="logo-ayuntamiento">
+            <p>Ayuntamiento de Logroño</p>
+        </div>
+        <div>
+            <p>Organiza: Concejalia de Juventud</p>
+            <p>Dirección: C/ Mayor 1, 26001</p>
+        </div>
+        <div>
+            <p>Contacto: 941 27 70 00</p>
+            <p>Email: <a href="#">juventud@logroño.es</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

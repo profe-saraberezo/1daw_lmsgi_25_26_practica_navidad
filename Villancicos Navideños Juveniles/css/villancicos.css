@@ -1,0 +1,146 @@
+:root {
+    --blanco: #ffffffef;
+    --negro: #000000;
+    --gris: #e5dede;
+    --rojo: #af0b0b;
+    --verde: #155f02;
+    --azul: #024c5f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    text-align: center;
+    padding: 30px;
+}
+
+h2 {
+    color: var(--rojo);
+    padding: 10px;
+}
+
+section {
+    background-color: var(--blanco);
+    border: 2px solid var(--rojo);
+    border-radius: 8px;
+    text-align: left;
+    margin: 40px;
+    padding: 10px;
+}
+
+.fotos {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul {
+    padding: 0 40px;
+    text-align: justify;
+}
+
+.formulario {
+    text-align: center;
+}
+
+form {
+    border: 1px solid var(--gris);
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+label,input, select,
+textarea {
+    padding: 5px;
+}
+
+button {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 8px;
+}
+
+footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px;
+}
+
+.linkfooter a {
+    color: var(--blanco);
+}
+
+@media(max-width: 760px) {
+    :root {
+        --verde: #155f02;
+    }
+
+    header {
+        background-color: var(--verde);
+    }
+
+    h2 {
+        color: var(--verde);
+    }
+
+    section {
+        border: 2px solid var(--verde);
+    }
+
+    .fotos {
+        flex-direction: column;
+    }
+
+    button {
+        background-color: var(--verde);
+    }
+}
+
+@media(max-width:480px) {
+    :root {
+        --azul: #024c5f;
+    }
+
+    header {
+        background-color: var(--azul);
+    }
+
+    h2 {
+        color: var(--azul);
+    }
+
+    section {
+        border: 2px solid var(--azul);
+        margin: 15px;
+    }
+
+    .fotos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    button {
+        background-color: var(--azul);
+    }
+}

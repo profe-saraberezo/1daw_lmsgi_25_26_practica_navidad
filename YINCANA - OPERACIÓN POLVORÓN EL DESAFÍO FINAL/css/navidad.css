@@ -1,0 +1,416 @@
+:root {
+  --fondo: #0a0e14;
+  --fondo2: #16212e;
+  --titulo: #00f2ff;
+  --detalles: #ff003c;
+  --texto: #e0e0e0;
+  --dorado: #d4af37;
+}
+
+body {
+  background-image: url(../img/fondo4.png);
+  color: var(--texto);
+  font-family: "Montserrat";
+  align-items: center;
+  font-size: 18px;
+  margin: 4%;
+  margin-top: 1%;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", cursive;
+  letter-spacing: 2px;
+  color: var(--titulo);
+  padding-bottom: 1%;
+}
+
+/* Cabecera */
+header {
+  text-align: center;
+  border: 2px solid var(--titulo);
+  background-color: var(--fondo2);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin: 15px;
+}
+
+header a {
+  background-color: var(--detalles);
+  color: white;
+  font-family: "Montserrat", cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+header a:hover {
+  background-color: var(--titulo);
+  color: var(--fondo);
+}
+
+/* Explicación */
+.explicacion {
+  background-color: var(--fondo2);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--titulo);
+  background-color: var(--fondo2);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin: 15px;
+}
+
+.explicacion2 ul {
+  list-style: none;
+}
+
+#imagen-explicacion {
+  max-width: 20%;
+  height: auto;
+  align-self: center;
+  padding: 10px;
+  border: 3px solid var(--dorado);
+  border-radius: 12px;
+}
+
+#imagen-explicacion:hover,
+#imagen-otros img:hover {
+  border-color: #ffd700;
+}
+
+/* Otros Años */
+.otros-años {
+  background-color: var(--fondo2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  border: 2px solid var(--titulo);
+  background-color: var(--fondo2);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+#imagen-otros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 95%;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#imagen-otros img {
+  flex: 1 1 20%;
+  /* Permite crecer encogerse cuando sea posible 20% es la base */
+  max-width: 25%;
+  height: auto;
+  border-radius: 5px;
+  border: 3px solid var(--dorado);
+  border-radius: 12px;
+}
+
+/* Requisitos */
+.requisitos {
+  background-color: var(--fondo2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--titulo);
+  background-color: var(--fondo2);
+  border-radius: 20px;
+  padding: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin: 15px;
+}
+
+.requisitos ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  gap: 50px;
+  width: 100%;
+}
+
+.requisitos li {
+  padding-left: 70px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  font-size: 20px;
+  gap: 20px;
+}
+
+#fisico {
+  background-image: url(../img/icono-fisico.png);
+}
+
+#edad {
+  background-image: url(../img/icono-persona.png);
+}
+
+#padron {
+  background-image: url(../img/icono-ciudad.png);
+}
+
+/* Inscripción */
+.inscripcion {
+  background-color: var(--fondo2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid var(--titulo);
+  background-color: var(--fondo2);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.inscripcion form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 95%;
+}
+
+.inscripcion fieldset {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid var(--detalles);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.inscripcion label {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  display: block;
+  width: 100%;
+}
+
+.inscripcion input {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto 20px;
+  border: 2px solid var(--titulo);
+  color: var(--texto);
+  background-color: var(--fondo);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.inscripcion fieldset p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#observaciones {
+  resize: vertical;
+  min-height: 80px;
+  width: 95%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto 20px;
+  padding: 10px;
+  background-color: var(--fondo);
+  border: 2px solid var(--titulo);
+  color: var(--texto);
+  font-size: 18px;
+}
+
+.inscripcion button {
+  background-color: var(--detalles);
+  color: white;
+  font-family: "Montserrat", cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.inscripcion button:hover {
+  background-color: var(--titulo);
+  color: var(--fondo);
+}
+
+#circulito {
+  display: flex;
+  align-items: center;
+}
+
+/* Pie de página */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--fondo2);
+  border-top: 3px solid red;
+  padding: 30px 10px;
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  max-width: 300px;
+}
+
+footer img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: var(--titulo);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  body {
+    margin: 2%;
+    font-size: 15px;
+  }
+
+  .explicacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explicacion2 {
+    max-width: 100%;
+  }
+
+  #imagen-explicacion {
+    margin-top: 20px;
+    max-width: 60%;
+  }
+
+  #imagen-otros {
+    flex-wrap: wrap;
+  }
+
+  #imagen-otros img {
+    flex: 1 1 40%;
+    max-width: 45%;
+    margin-bottom: 15px;
+  }
+
+  .requisitos ul {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .requisitos li {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    padding-top: 60px;
+    background-size: 50px;
+    background-position: top center;
+    width: 30%;
+    background-size: 50px;
+    font-size: 16px;
+  }
+
+  .inscripcion form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .inscripcion fieldset {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 479px) {
+  body {
+    font-size: 10px;
+  }
+
+
+  #imagen-otros {
+    display: flex;
+    flex-direction: column !important;
+    /* Prioriza la regla con important*/
+    align-items: center;
+    gap: 20px;
+  }
+
+  #imagen-otros img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .requisitos li {
+    width: 100%;
+  }
+
+  .inscripcion input,
+  #observaciones {
+    max-width: 100%;
+  }
+
+  .inscripcion button {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  footer div {
+    max-width: 100%;
+  }
+}
