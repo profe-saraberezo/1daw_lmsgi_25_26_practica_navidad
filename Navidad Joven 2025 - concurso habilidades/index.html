@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Navideña Juvenil - Ayuntamiento</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER con TÍTULO con descripción -->
+    <header class="main-header">
+        <h1>🎄 Navidad Joven 2025 🎄</h1>
+        <p>Un evento navideño para jóvenes organizado por el Ayuntamiento de Logroño</p>
+    </header>
+
+    <!-- DESCRIPCIÓN DE LA ACTIVIDAD -->
+    <section class="descripcion">
+        <h2>Descripción de la actividad</h2>
+
+        <!-- Explicas la actividad de forma descriptiva -->
+        <p>El Ayuntamiento de [Nombre del Pueblo] invita a todos los jóvenes a participar en nuestro Concurso Navideño
+            2025, una actividad pensada para celebrar la creatividad, el espíritu navideño y el talento local.
+
+            Este concurso está dirigido a jóvenes del municipio que quieran demostrar sus habilidades artísticas (baile,
+            música, dibujo, fotografía, manualidades o cualquier expresión creativa) en un ambiente festivo, divertido y
+            lleno de sorpresas.
+
+            Además, habrá premios especiales para los ganadores, reconocimiento municipal, actividades paralelas, música
+            en vivo y un espacio para compartir con amigos y vecinos.
+
+            ¡Anímate a participar y forma parte de la magia de esta Navidad en nuestro pueblo! 
+            Te invitamos a participar en nuestra actividad navideña anual para jóvenes del municipio:
+            juegos, concurso de talentos y chocolatada .
+            Se celebrará el 20 de diciembre en el Centro Cultural Municipal a las 18:00h.🎅
+        </p>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="galeria">
+
+        <h2>¡¡¡ Anímate a participar !!!</h2>
+        <br><br>
+
+        <div class="contenedor-galeria">
+            <img src="img/img3.jpg" alt="concurso de Belenes 2025">
+            <img src="img/img1.jpg" alt="Fiesta navideña 2025">
+            <img src="img/img2.jpg" alt="Actividad joven 2025">
+        </div>
+    </section>
+
+    <!-- REQUISITOS DE INSCRIPCIÓN -->
+    <div class="sectionR">
+        <section class="requisitos">
+            <h2>Requisitos de inscripción</h2>
+            <br><br>
+            <ul>
+                <li>Edad: para todas las edades.</li>
+
+                <li>Autorizacón de padres a menores de edad</li>
+
+                <li>Empadronamiento: obligatorio estar registrado en el municipio.</li>
+            </ul>
+        </section>
+
+    <!-- FORMULARIO -->
+    <section class="formulario">
+        <h2>Formulario de inscripción</h2>
+        <br><br>
+        <form>
+
+            <fieldset>
+
+                <label>Nombre completo:</label>
+
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="2"
+                    maxlength="50" autocomplete="name" autofocus>
+                <br><br>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required
+                    autocomplete="email" multiple>
+                <br><br>
+
+
+                <label>Edad:</label>
+                <input type="number" min="14" max="30" required>
+            </fieldset>
+            <fieldset>
+                <p> Concursos:</p>
+                <label><input type="checkbox" name="Belenes" value="as" checked> Belenes</label>
+                <label><input type="checkbox" name="talentos" value="en"> talentos</label>
+                <label><input type="checkbox" name="chocolatada" value="fr"> chocolatada</label>
+
+                <br><br>
+
+
+                <label>¿Estás empadronado en el municipio?</label>
+                <select required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Sí</option>
+                    <option>No</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label>¿Te inscribes en grupo?</label>
+                <select>
+                    <option value="no">No</option>
+                    <option value="2-4">Grupo de 2 a 4 personas</option>
+                    <option value="5-8">Grupo de 5 a 8 personas</option>
+                </select>
+
+
+                <label>Observaciones</label>
+                <textarea rows="4" placeholder="Sugerencias"></textarea>
+
+                <!-- BOTÓN -->
+                <button type="submit">Enviar inscripción</button>
+            </fieldset>
+
+        </form>
+    </section>
+
+    </div>
+
+    <!-- FOOTER CON CONTACTO -->
+    <footer>
+        <p>Ayuntamiento de VillaNorte © 2025</p>
+        <p>📍 Plaza Mayor 12 — Tel: 555 222 111 — Email: juventud@villanorte.es</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+:root {
+    --color-principal: #d30000;
+    --color-secundario: #ffffff;
+    --color-oscuro: #222;
+    --color-fondo: #1b5a27a6;
+    --color-movil: #00a405;
+    --color-incripcion:#cbb805;
+    --color-formulario:#c9655a;
+
+    --radius: 15rem;
+    
+    --font-titulo: 50rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Estilo general del body
+ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+    background: var(--color-fondo);
+    color: var(--color-oscuro);
+    max-width: 1000rem;
+   
+}
+
+/* 
+HEADER
+ */
+.main-header {
+    background: var(--color-principal);
+    color: var(--color-secundario);
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+/* 
+SECCIONES GENERALES
+ */
+section {
+    padding: 1rem;
+    flex-wrap: 50%;
+}
+
+/* 
+GALERÍA
+ */
+.contenedor-galeria {
+
+
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+   
+}
+
+.contenedor-galeria img {
+    width: 30%;
+    border-radius: var(--radius);
+    
+}
+
+
+/* 
+FORMULARIO
+ */
+form {
+
+    max-width:40rem;
+    background-color:var(--color-formulario);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.8);
+    color: var(--var-color-texto);
+    flex-basis: 50%;
+}
+
+.sectionR{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 5rem;
+    justify-content:space-between;
+    border-left: 2rem;
+}
+    
+
+
+button {
+    padding: 12px;
+    background: var(--color-incripcion);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* 
+FOOTER
+*/
+footer {
+    background: var(--color-oscuro);
+    color: var(--color-secundario);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* 
+RESPONSIVE: MÓVIL <480px
+ */
+@media (max-width:480px){
+
+    .main-header h1 {
+        font-size: 24px;
+        background-color: var(--color-movil);
+    }
+
+    .contenedor-galeria img {
+        width: 100%;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+}
+
+/* 
+RESPONSIVE: TABLET <768px
+ */
+@media (max-width:768px){
+
+    .contenedor-galeria img {
+        width: 40%;
+        
+    }
+    
+    .main-header h1 {
+        font-size: 48px;
+        background-color: var(--color-oscuro);
+    }
+
+
+}

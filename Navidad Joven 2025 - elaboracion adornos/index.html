@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilo.css"/>
+	<title>Taller de adornos de navidad</title>
+</head>
+<body>
+  <!-- HEADER -->
+    <header id="header2">
+    <h1 id="headerh1">Navidad Joven 2025</h1>
+    <p id="headerp">Taller de Navidad para jovenes organizado por el Ayuntamiento de Logroño</p>
+    </header>
+  <!-- DESCRIPCIÓN -->
+    <section class="contenedor">
+    <h2 class="margentopybot">¿En qué consiste la actividad?</h2>
+    <p>
+     El Ayuntamiento organiza una jornada especial de Navidad dirigida a jóvenes, 
+     que incluye un taller creativo de elaboración de adornos navideños, 
+     donde los participantes podrán diseñar y crear sus propios elementos decorativos. 
+     La actividad finalizará con una gran chocolatada, pensada para compartir un momento agradable, 
+     hacer nuevos amigos y vivir la Navidad de una forma activa, creativa y divertida.
+    </p>
+  </section>
+  <!-- GALERÍA -->
+  <section class="contenedor">
+    <h2>Ediciones anteriores</h2>
+    <div id="galeria">
+      <img src="img/taller1.jpg" class="img">
+      <img src="img/taller2.jpg" class="img">
+      <img src="img/taller3.jpg" class="img">
+    </div>
+  </section>
+  <!-- REQUISITOS -->
+  <section class="contenedor">
+    <h2>Requisitos de inscripción</h2>
+    <ul id="lista">
+      <li>Tener entre 10 y 30 años.</li>
+      <li>Estar empadronado/a en el municipio.</li>
+      <li>Autorización paterna/materna en caso de menores de edad.</li>
+      <li>En caso de tener alguna incapacidad fisica, notificarlo.</li>
+    </ul>
+  </section>
+  <!-- FORMULARIO -->
+  <section class="contenedor">
+    <h2>Formulario de inscripción</h2>
+
+    <form>
+      <div>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="2" maxlength="30" autocomplete="nombre" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu email" autocomplete="email" required>
+      </div>
+
+      <div>
+        <label for="edad">Fecha de nacimiento</label>
+        <input type="datetime-local" id="fecha" name="fecha" min="1995-01-01" max="2015-01-01" required>
+      </div>
+
+      <div>
+        <label for="inscripcion">Tipo de inscripción</label>
+        <select id="grupos" name="grupos">
+          <option value="solo">Individual</option>
+          <option value="grupopeque">Grupo (2-5 personas)</option>
+          <option value="grupogrande">Grupo (más de 5 personas)</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="extras">Observaciones</label>
+        <textarea placeholder="Alergias, necesidades especiales, nombre del grupo..."></textarea>
+      </div>
+
+      <button type="enviar">Enviar inscripción</button>
+    </form>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class="margentopybot">
+    <p>Ayuntamiento de Logroño</p>
+    <p>Avenida de la Paz, 11, 26004 · Tel: 941 277 000</p>
+    <p>talleres@logroño.es</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+:root {
+    --rojo-navidad:#B11226;
+    --verde-abeto:#1F6F43;
+    --dorado-suave:#E6C35C;
+    --blanco-calido:#FAF8F5;
+    --gris-oscuro:#2E2E2E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("../img/fondonavidad.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: var(--rojo-navidad);
+}
+
+section {
+      padding: 20px 20px;
+    }
+
+form{
+    background: var(--verde-abeto);
+    padding: 25px;
+    border-radius: 10px;
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--dorado-suave);
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--blanco-calido);
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+button {
+    background-color: var(--rojo-navidad);
+    color: var(--blanco-calido);
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--dorado-suave);
+}
+
+#header2 {
+    background-image: url("../img/fondo.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 90px 20px;
+    color:var(--blanco-calido);
+    text-align: center;
+}
+
+#headerh1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#headerp {
+    font-size: 1.2rem;
+}
+
+.margentopybot{
+    margin-top: 2%;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#lista {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco-calido);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* ---RESPONSIVE--- */
+
+ /* TABLET < 768px */
+    @media (max-width: 768px) {
+      #galeria {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* MÓVIL < 480px */
+    @media (max-width: 480px) {
+      #headerh1 {
+        font-size: 1.8rem;
+      }
+
+      #galeria {
+        grid-template-columns: 1fr;
+      }
+    }
+
+   
