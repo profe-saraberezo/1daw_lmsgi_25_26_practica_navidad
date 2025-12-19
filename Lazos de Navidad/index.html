@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazos de Navidad - Ayuntamiento de Logroño</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="todo">
+
+        <header class="main-header">
+            <h1>Lazos de Navidad</h1>
+            <h2>Que ningún hogar se quede sin magia</h2>
+        </header>
+
+        <main>
+            <section class="texto">
+
+                <article class="info">
+                    <h3>Sobre la iniciativa</h3>
+                    <p>
+                        La Navidad es mucho más que recibir; es el momento de compartir. Lazos de Navidad es una
+                        iniciativa
+                        del Ayuntamiento para conectar a familias donantes con hogares vulnerables. Tu misión será
+                        entregar
+                        personalmente la ilusión y compartir un momento de calidez humana.
+                    </p>
+                </article>
+
+                <article class="info">
+                    <h3>Sobre el Regalo</h3>
+                    <ul>
+                        <li><strong>Estado:</strong> Nuevo y precintado. No usados.</li>
+                        <li><strong>Naturaleza:</strong> No bélicos ni sexistas.</li>
+                        <li><strong>Valor:</strong> Entre 20€ y 40€ para equidad.</li>
+                        <li><strong>Entrega:</strong> Envuelto y con etiqueta de edad.</li>
+                    </ul>
+                </article>
+
+                <article class="info">
+                    <h3>Requisitos</h3>
+                    <ul>
+                        <li>Estar empadronado en el municipio.</li>
+                        <li>Registro previo obligatorio antes del 22/12.</li>
+                        <li>Acudir con al menos un menor de edad.</li>
+                        <li>Disponer de transporte propio.</li>
+                    </ul>
+                </article>
+
+            </section>
+
+            <section class="galeria">
+                <h3>Momentos de campañas anteriores</h3>
+                <div class="img-st">
+                    <img src="img/regalo1.jpg" alt="Regalo 1">
+                    <img src="img/regalos2.jpg" alt="Regalo 2">
+                    <img src="img/regalos3.jpg" alt="Regalo 3">
+                </div>
+            </section>
+
+            <section id="formulario">
+                <h3>Inscríbete aquí</h3>
+
+                <form action="#" method="post">
+                    <fieldset class="fila-contacto">
+                        <legend>Datos de contacto</legend>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+
+                        <div>
+                            <label for="email">Correo:</label>
+                            <input type="email" id="email" name="email" required placeholder="email@correo.com">
+                        </div>
+
+                        <div>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{9}">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Composición de la visita</legend>
+                        <div class="hfila">
+                            <div class="tipo">
+                                <div class="radio">
+                                    <input type="radio" id="familia" name="tipo_asist" value="familia" checked>
+                                    <label for="familia">Familia</label>
+
+                                    <input type="radio" id="grupo" name="tipo_asist" value="grupo">
+                                    <label for="grupo">Grupo</label>
+                                    <br><br>
+                                </div>
+                            </div>
+                            <div class="contadores">
+                                <div class="cont">
+                                    <label for="adultos">Nº Adultos:</label>
+                                    <input type="number" id="adultos" name="adultos" min="1" value="1">
+
+                                    <label for="ninos">Nº Niños:</label>
+                                    <input type="number" id="ninos" name="ninos" min="1" value="1" style=>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dni">
+                            <label for="lista_dnis">DNI acompañantes:</label><br>
+                            <textarea id="lista_dnis" name="lista_dnis" rows="2"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Confirmación</legend>
+                        <div class="cuadrados">
+                            <label><input type="checkbox" required> Acepto no tomar fotos.</label><br>
+                            <label><input type="checkbox" required> Acepto política privacidad.</label>
+                            <br><br>
+                        </div>
+                        <button type="submit" class="enviar">¡INSCRIBETE!</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+</body>
+<footer>
+    <article class="final">
+        <section class="logo">
+            <a href="https://logrono.es/" target="_blank">
+                <img class="ig" src="img/logo.jpg" alt="ayto Logroño">
+            </a>
+        </section>
+        <section class="cright">
+            <p>©Derechos de autor reservados Ayuntamiento de Logroño</p>
+        </section>
+        <section class="r-social">
+            <a href="https://www.facebook.com/AytoLogrono/?locale=es_ES" target="_blank">
+                <img class="fc" src="img/facebook.jpg" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com/aytologrono/?hl=es" target="_blank">
+                <img class="ig" src="img/ig.jpg" alt="instagram">
+            </a>
+            <a href="https://x.com/AytoLogrono?lang=es" target="_blank">
+                <img class="x" src="img/x.jpg" alt="x">
+            </a>
+        </section>
+    </article>
+</footer>
+</div>
+
+</html>
