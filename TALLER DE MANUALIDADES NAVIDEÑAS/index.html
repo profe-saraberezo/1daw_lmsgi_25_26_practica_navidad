@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosnav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Evento Navideño Logroño</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="imgs/Logo-Logrono.jpg">
+        <h1>TALLER DE MANUALIDADES NAVIDEÑAS</h1>
+        <h3>Logroño, La Rioja</h3>
+    </header>
+    <div id="asimain">
+        <aside class="aside">
+            <form class="formulario">
+
+                <h2>FORMULARIO INSCRIPCIÓN</h2>
+
+                <h3>DATOS DEL PARTICIPANTE</h3>
+                <p>Nombres y apellidos:</p>
+                <input type="text" name="NombreParticipante" placeholder="Escribe tu nombre completo"> <br>
+                <label for="rango">Edad</label>
+                <input type="range" id="rango" name="rango" min="6" max="14" step="1" value="14"
+                    oninput="this.nextElementSibling.textContent = this.value">
+                <span>18</span>
+                <p>¿Estás empadronado/a en el municipio?</p>
+                <input type="radio" name="empadronado"> <span>Sí</span> <br>
+                <input type="radio" name="empadronado"> <span>No</span>
+                
+                <h3>INSCRIBIR UN GRUPO</h3>
+                <p>Nombre de grupo e integrantes</p>
+                <input type="text" name="NombreGrupo" placeholder="Escribe el nombre del grupo">
+                <input type="text" name="NombreIntegrantes" placeholder="Ej: Ana, Luis, Marta">
+
+                <h3>DATOS DEL PADRE/MADRE/TUTOR</h3>
+                <p>Nombres y apellidos:</p>
+                <input type="text" name="NombreTutor" placeholder="Escribe tu nombre completo">
+                <p>Correo Electrónico</p>
+                <input type="email" name="Correo" placeholder="Ingrese su correo electronico">
+                <p>Teléfono</p>
+                <input type="tel" name="Telefono" placeholder="Número telefónico"> <br>
+
+                <h3>AUTORIZACIONES</h3>
+                <input type="checkbox" name="opcion1" required> <span>Acepto términos y condiciones</span> <br>
+                <input type="checkbox" name="opcion2"> <span>Autorizo la participación del menor en el taller</span>
+                <br>
+                <input type="checkbox" name="opcion3"> <span>Autorizo el uso de imágenes con fines
+                    informativos</span> <br>
+
+                <h3>COMENTARIOS</h3>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe aquí..."
+                    maxlength="500"></textarea>
+                <button>Enviar formulario</button>
+            </form>
+            <ul> <b>Requisitos: </b></ul>
+            <li>Actividad dirigida a niños y niñas de entre 6 y 14 años </li>
+            <li>No se requieren condiciones físicas específicas, pues la actividad está adaptada a distintos niveles de
+                habilidad</li>
+            <li>Preferencia para personas empadronadas, sin ser requisito obligatorio</li>
+        </aside>
+        <main class="main">
+            <h2>Descripción</h2>
+            <p> Te invitamos a participar en nuestro Taller de Manualidades Navideñas, una actividad pensada para
+                fomentar
+                la creatividad, la convivencia y el espíritu navideño.
+                Durante el taller, los participantes realizarán distintas manualidades utilizando materiales sencillos,
+                desarrollando su imaginación y habilidades artísticas en un ambiente divertido y acogedor.</p>
+            <section class="fotos">
+                <article id="img1">
+                    <p><span>2021</span> El taller de manualidades navideñas se inició con propuestas básicas y accesibles para todos los participantes. Se realizaron tarjetas de felicitación, adornos de papel, estrellas y pequeños detalles decorativos. El objetivo principal fue introducir técnicas sencillas, fomentar la creatividad y crear un espacio de convivencia y participación durante la época navideña.</p>
+                    <img src="imgs/img1an.webp">
+                </article>
+                <article id="img2">
+                    <img src="imgs/img2an.webp">
+                    <p><span>2022</span> Durante este año el taller amplió sus actividades incorporando nuevos materiales como cartón, telas, elementos reciclados y pintura. Se elaboraron adornos para el árbol, decoraciones para el hogar y pequeños regalos hechos a mano. Se observó una mayor implicación de los participantes y una mejora en la organización y variedad de las manualidades. Además fue todo un éxito pues le hicimos mucha mas publicidad al taller y asistieron muchas personas y los niños diseñaron cosas muy interesantes</p>
+                </article>
+                <article id="img3">
+                    <p><span>2023</span> Justo cuando pensamos que no iba a poder estar mejor incluimos la modalidad de grupos para que los niños se relacionaran mucho mas entre ellos. Y el taller continuó evolucionando con proyectos más elaborados y estructurados. Se realizaron centros de mesa, guirnaldas, coronas navideñas y decoraciones temáticas. Se trabajó de forma más planificada, potenciando el trabajo en grupo, la creatividad individual y el cuidado de los acabados, logrando resultados más complejos y vistosos. </p>
+                    <img src="imgs/img3an.jpg">
+                </article>
+                <article id="img4">
+                    <img src="imgs/img4an.jpg">
+                    <p><span>2024</span> En este último año el taller se consolidó como un espacio creativo y participativo. Se apostó por manualidades sostenibles, el uso de técnicas mixtas y la creación de elementos decorativos funcionales. Los participantes demostraron mayor autonomía, originalidad y dominio de las técnicas, reflejando una clara evolución y madurez en los trabajos realizados. Y también hubo mucho más apoyo de parte de la municipalidad y decidimos tener el gesto de darle regalos a todos los niños que asistan al taller y así motivar a que muchos mas niños decidan participar y descubrir el talento que llevan dentro </p>
+                </article>
+            </section>
+            
+
+        </main>
+    </div>
+    <footer class="foot">
+        <div>
+            <p>📍 Calle Navidad 123, Ciudad</p>
+            <p>📞 555-123-456</p>
+            <p>✉ contacto@tallernavidad.com</p>
+        </div>
+        <div>
+            <p>&copy; 2025 Taller de Manualidades. <br> Todos los derechos reservados.</p>
+        </div>
+        <div>
+            <a href="#">
+                <img src="imgs/logoig.jpg" alt="logo instagram">
+            </a>
+            <a href="#">
+                <img src="imgs/logof.webp" alt="logo facebook">
+            </a>
+            <a href="#">
+                <img src="imgs/logotw.png" alt="logo twitter">
+            </a>
+        </div>
+        
+    </footer>
+</body>
+
+
+
+
+</html>
