@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Proyecto Navidad</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body id="contenedor">
+
+	<!-- Header -->
+	<header id="titulo">
+		<h1>Renos en Logroño.</h1>
+	</header>
+
+	<!-- Main -->
+	<main id="main">
+		<section id="principal">
+
+			<!-- Secciones -->
+			<section id="seccionIzquierda" class="secciones">
+
+				<!-- Seccion de la Izquierda -->
+				<article>
+					<article class="titulos">
+						<h2>Información.</h2>
+					</article>
+
+					<!-- Texto de la seccion Izquierda -->
+					<article id="informacion">
+						<p id="texto1">
+							Esta Navidad, la ciudad de Logroño se llena de ilusión con una mágica exhibición de renos
+							pensada especialmente para los más pequeños. Los niños podrán disfrutar de una experiencia
+							única acercándose a estos entrañables animales en un entorno decorado con espíritu navideño.
+							Además de contemplarlos de cerca, el evento ofrece la posibilidad de montar en renos de
+							forma segura, permitiendo que varios niños participen juntos en cada recorrido, fomentando
+							la diversión en grupo y compartiendo momentos inolvidables. La actividad está diseñada para
+							que los más pequeños vivan la Navidad de una manera diferente, rodeados de fantasía, luces y
+							sonrisas. Familias y niños podrán disfrutar de un ambiente cálido y festivo, donde la
+							imaginación cobra vida y la tradición navideña se convierte en una experiencia interactiva.
+							Esta exhibición de renos en Logroño es una propuesta ideal para crear recuerdos especiales,
+							disfrutar en familia y dejarse llevar por la magia de la Navidad en un evento pensado para
+							todos los públicos, especialmente para los niños.
+						</p>
+						<br>
+						<p id="texto2">
+							Uno de los principales atractivos del evento es la posibilidad de montar en renos, una
+							actividad pensada especialmente para los niños dentro de un rango de edad determinado y
+							diseñada para que vivan una experiencia única y llena de fantasía. Los paseos se realizan en
+							grupos de varios niños que cumplan las condiciones físicas básicas necesarias, lo que
+							permite compartir la experiencia con amigos o hermanos, fomentando la convivencia, la
+							diversión colectiva y la emoción del momento. Durante el recorrido, los pequeños que cuenten
+							con la capacidad física adecuada podrán disfrutar del entorno navideño y sentirse parte de
+							una aventura especial. Todo el trayecto está supervisado en todo momento por personal
+							especializado y cualificado, que se encarga de garantizar la seguridad y el bienestar de los
+							participantes, verificando previamente la edad y aptitud física requeridas, ofreciendo a las
+							familias la tranquilidad necesaria para que los niños disfruten de la actividad con total
+							confianza.
+						</p>
+						<br>
+						<p id="texto3">
+							Este evento navideño está enfocado principalmente al público infantil, ofreciendo una
+							alternativa de ocio original, divertida y memorable durante las fechas más especiales del
+							año, pensada para estimular la imaginación y la ilusión de los más pequeños. Las familias
+							podrán disfrutar de un plan diferente en Logroño, ideal para crear recuerdos inolvidables,
+							hacer fotografías en un entorno cuidadosamente decorado y vivir momentos llenos de alegría,
+							emoción y complicidad. La exhibición de renos se presenta como una actividad perfecta para
+							complementar las celebraciones navideñas, invitando a grandes y pequeños a compartir
+							sonrisas, ilusión y la magia propia de estas fechas tan señaladas, en un ambiente familiar
+							que refuerza los valores de la Navidad y el disfrute conjunto.
+						</p>
+						<br>
+						<p id="texto4">
+							El espacio del evento contará además con zonas habilitadas para el descanso y la
+							observación, donde padres y acompañantes podrán disfrutar tranquilamente del ambiente
+							navideño, la decoración y la música propia de estas fechas mientras los niños participan en
+							las actividades. Estos espacios están pensados para ofrecer comodidad y una buena
+							visibilidad, permitiendo a las familias relajarse y compartir el momento sin perder detalle
+							de la experiencia. La organización ha cuidado cada aspecto del evento para ofrecer una
+							experiencia accesible, cómoda y pensada para toda la familia, prestando especial atención a
+							la seguridad, el bienestar y la ambientación, convirtiendo esta exhibición de renos en una
+							cita imprescindible de la Navidad en Logroño y en un plan ideal para disfrutar juntos de la
+							magia de estas fechas.
+						</p>
+					</article>
+				</article>
+
+				<!-- Imagenes de la seccion de la Izquierda -->
+				<section id="seccionImagenes">
+					<img src="img/imagenReno1.png" alt="Imagen de reno" class="fotos" id="foto1">
+					<img src="img/imagenReno2.png" alt="Imagen de Logroño Navidad" class="fotos" id="foto2">
+					<img src="img/imagenReno3.png" alt="Imagen de foto renos" class="fotos" id="foto3">
+
+				</section>
+			</section>
+
+			<section id="seccionDerecha" class="secciones">
+
+				<article>
+					<article class="titulos">
+						<h2>Inscripción.</h2>
+					</article>
+
+					<!-- Formulario de la seccion de la Derecha -->
+					<form action="/enviar" method="post" enctype="multipart/form-data" novalidate target="_self"
+						rel="noopener" name="form-inscripcion">
+						<fieldset class="formularios">
+							<legend>Datos personales</legend>
+							<label>Nombre <br> <input type="text" name="Nombre" placeholder="Escribe tu nombre..."
+									minlength="2" maxlength="50" class="formularioTextos" required> </label> <br> <br>
+							<label>Apellidos <br> <input type="text" name="Apellidos"
+									placeholder="Escribe tus Apellidos..." minlength="2" maxlength="50"
+									class="formularioTextos" required> </label><br> <br>
+							<label>Edad <br> <input type="number" name="Edad" min="1" max="99" required> </label>
+							<br><br>
+						</fieldset>
+
+						<fieldset class="formularios">
+							<legend>Contacto</legend>
+							<label>Email <br> <input type="email" name="mail" placeholder="ejemplo@ejemplo.com" required
+									autocomplete="email" class="formularioTextos"> </label> <br> <br>
+							<label>Teléfono <br> <input type="tel" name="telefono" placeholder="+34 123 456 789"
+									pattern="[0-9]{9}" required> </label>
+							<br><br>
+						</fieldset>
+
+						<fieldset class="formularios">
+							<legend>Equipo</legend>
+							<label>Nombre de equipo <br> <input type="text" name="equipo"
+									placeholder="Escribe aquí el nombre de tu equipo..." minlength="2" maxlength="100"
+									class="formularioTextos"> </label> <br> <br>
+							<label>Integrantes <br> <input type="text" name="integrantes"
+									placeholder="ej: Manolo, Marcos, Alan, Nora..." minlength="2" maxlength="100"
+									class="formularioTextos"> </label>
+							<br><br>
+						</fieldset>
+
+						<fieldset class="formularios">
+							<legend>Observaciones</legend>
+							<textarea name="comentario" id="comentario" rows="4" cols="40"
+								placeholder="Introduzca sus observaciones..." maxlength="500"
+								class="formularioTextos"></textarea>
+							<br><br>
+						</fieldset>
+
+						<fieldset class="formularios">
+							<legend>Enviar</legend>
+							<button type="submit" value="Enviar" formmethod="post"
+								formaction="pagina.php">Enviar</button>
+							<button type="reset">Restablecer</button>
+							<br><br>
+						</fieldset>
+
+					</form>
+				</article>
+			</section>
+		</section>
+
+
+	</main>
+
+	<!-- Footer -->
+	<footer id="footer">
+
+		<!-- Contacto del ayuntamiento de Logroño -->
+		<section id="seccionFooter">
+			<ul>
+				<li>Direccion:</li>
+				<ul>
+					<li>Avenida de la Paz, 11 Bajo.</li>
+					<li>26071 Logroño</li>
+					<li>La Rioja</li>
+				</ul>
+			</ul>
+			<ul>
+				<li>Teléfono:</li>
+				<ul>
+					<li>+34 941 277 000</li>
+					<li>010</li>
+				</ul>
+			</ul>
+		</section>
+
+		<!-- Texto de Copyright -->
+		<article id="textoFooter">
+			<p>&copy; 2025 Ayuntamiento de Logroño Gorbierno de La Rioja | Todos los derechos reservados</p>
+		</article>
+	</footer>
+
+</body>
+
+</html>

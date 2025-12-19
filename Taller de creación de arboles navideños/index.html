@@ -1,0 +1,158 @@
+<html id="general">    
+    <head>
+        <title>Actividad navideña</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--NNNNNNNNN
+        Titulo pagina
+        NNNNNNNNNN-->
+        <div class="flexearTitulo">
+            <header id="cuadroTitulo" class="textoCentrado fontTitulos">
+                <p>Taller de creación de arboles navideños</p>
+            </header>
+            
+        </div>
+        <!--NNNNNNNNN
+        Arbol e imagenes
+        galeria
+        NNNNNNNNNN-->
+    
+        <main class="flexearArbolGaleria">
+            <!-- Arbol -->
+            <section class="seccionArbol">
+                <!-- Estrella -->
+                <article id="estrella">★</article>
+                <!-- Triangulo -->
+                <article id="triangulo" class="textoArbol">
+                    <p>¡Únete a nosotros en este taller de arboles de navidad!</p>
+                </article>
+                <!-- Primer trapecio -->
+                <article id="trapecioPequeno" class="textoArbol">
+                    <p>El Ayuntamiento de Corvera de Toranzo organiza un taller creativo de árboles de Navidad dirigido a niños y niñas, con el objetivo de fomentar la imaginación, la creatividad y el espíritu navideño en un ambiente divertido y participativo.</p>
+                </article>
+                <!-- Segundo trapecio -->
+                <article id="trapecioGrande" class="textoArbol">
+                    <p>Durante la actividad, los más pequeños podrán diseñar y decorar su propio árbol de Navidad utilizando diferentes materiales, colores y formas, desarrollando su creatividad mientras disfrutan de una experiencia lúdica y educativa. El taller está pensado como un espacio de convivencia donde los niños podrán aprender, compartir y divertirse, acompañados por monitores y en un entorno seguro y adaptado a su edad.</p>
+                </article>
+                
+            </section>
+            <!-- Galeria -->
+            <section class="seccionGaleria">
+                <div id="cuadroImagenes" class="textoCentrado fontTitulos">
+                    <p>Galería imagenes años anteriores</p>
+                </div>
+                <div class="flexearGaleria">
+                    <article class="cuadroGaleria azulGaleria"><img src="/img/img1.jpg" alt="Foto1" height= "200px" width= "100%"></article>
+                    <article class="cuadroGaleria azulGaleria"><img src="/img/img2.jpg" alt="Foto2" height= "200px" width= "100%"></article>
+                    <article class="cuadroGaleria azulGaleria"><img src="/img/img3.jpg" alt="Foto3" height= "200px" width= "100%"></article>
+                    <article class="cuadroGaleria azulGaleria"><img src="/img/img4.jpg" alt="Foto4" height= "200px" width= "100%"></article>
+                </div>
+                
+            </section>
+        </main>
+
+    
+        <!--NNNNNNNNN
+        Requisitos y
+        formulario
+        NNNNNNNNNN-->
+        <div class="flexearRequisitosFormulario">
+            <!-- REQUISITOS -->
+            <section class="seccionRequisitos">
+                <h3>Requisitos</h3>
+                <ul class="listaRequisitos">                    
+                    <li>Querer pasarlo bien.</li>
+                    <li>Los menores deben ir acompañados de sus padres.</li>
+                    <li>Se debe abonar 1€ que irá a la beneficiencia.</li>
+                    <li>Los materiales los proporciona la organización.</li>
+                </ul>
+            </section>
+            <!-- FORMULARIO -->
+            <form class="formulario" action="">
+                <div class="flexearInscripcion">
+                    <!-- INSCRIPCION INDIVIDUAL -->
+                    <div class="margenInscripcion">
+                    <p>
+                        <h3>Inscripción individual</h3><br>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="2" maxlength="20" autocomplete="name" autofocus>
+                        </div>
+                        <div>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required minlength="2" maxlength="60" autocomplete="surname" autofocus>
+                        </div><br>
+                        <!--  -->
+                        
+                        <div>
+                            <b>¿Estás empadronado aqui?</b>
+                            <p>
+                            <input type="radio" name=”opcion1” value=”1”>
+                            <span>Si</span>
+                            </p>
+                            <p>
+                            <input type="radio" name=”opcion1” value=”1”>
+                            <span>No*</span>
+                            </p>
+                        </div>
+                        <div>
+                            
+                        </div>
+                        <p>*Aquellos que no estén empadronados deberán rellenar el impreso de gente no empadronada</p><br>
+                        <!--  -->
+                        <div>
+                            <b>Correo electrónico</b>
+                            <input type="email" name="correo">
+                        </div>
+                    </p>
+                    </div>
+                    <!--INSCRIPCION GRUPAL -->
+                    <div class="margenInscripcion">
+                    <p>
+                        <h3>Inscripción grupal*</h3><br>
+                        
+                        <div>
+                            <p><b>¿Cuantos sois?</b></p>
+                            <label for="asistentes">Número (sin contar adultos):</label>
+                            <input type="range" name="asistentes" min="1" max="10" step="1" value="5" oninput="seleccion.value = asistentes.value">
+                            <output id="seleccion"></output>
+                        </div><br>
+                        <div>
+                            <label for="nombreAd">Nombre adulto acompañante:</label>
+                            <input type="text" id="nombreAd" name="nombreAd" placeholder="Nombre del adulto responsable" required minlength="2" maxlength="20" autocomplete="name" autofocus>
+                        </div><br>
+                        <div>
+                            <span>Correo electrónico</span>
+                            <input type="email" name="correoEl">
+                        </div><br>
+                        <p>*Se deberá rellenar un formulario con los datos individuales requeridos en el formulario individual para cada niñ@ asistente</p>
+                        
+                    </p>                    
+                    </div>
+                </div>
+                <!-- OBSERVACIONES -->
+                <div class="centrarObservaciones">
+                    <h3>Observaciones</h3>
+                    <p><label for="comentarios">Escribe tu mensaje:</label></p>
+                    <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escribe aquí..."></textarea>
+                </div>
+                    
+            </form>
+        </div>
+        <!--NNNNNNNNN
+        Footer
+        NNNNNNNNNN-->
+        <footer class="footer">
+            <p>Correo electrónico</p>
+            <p>Teléfono</p>
+            <p>Dirección</p>
+        </footer>
+    </body>
+
+</html>

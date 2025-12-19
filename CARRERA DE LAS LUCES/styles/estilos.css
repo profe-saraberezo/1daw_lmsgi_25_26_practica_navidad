@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --rojo-navidad: #D32F2F;
+    --rojo-oscuro: #B71C1C;
+    --blanco: #FFFFFF;
+    --crema: #FFF8E1;
+    --verde-oscuro: #004D40;
+    --verde-claro: #00695C;
+    --gris-fondo: #F5F5F5;
+    --oro: #FFD700;
+    --sombra-suave: 0 4px 6px rgba(0,0,0,0.1);
+    --sombra-fuerte: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+html {
+    background-color: var(--gris-fondo);
+    color: var(--verde-oscuro);
+    line-height: 1.6;
+}
+
+/* --- Encabezado --- */
+header {
+    background-color: var(--blanco);
+    position: sticky; 
+    top: 0px;
+    z-index: 1000;
+    box-shadow: var(--sombra-suave);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 5%; 
+}
+
+#Titulo {
+    width: 75%; 
+    font-size: 42px;
+    letter-spacing: 4px;
+    color: var(--rojo-navidad);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#logo {
+    width: 20%; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+#logo img {
+    width: auto;
+    max-width: 100%; 
+    height: auto;
+    max-height: 90px;
+    transition: max-height 0.3s ease;
+}
+
+/* --- Navegación --- */
+nav {
+    background: linear-gradient(to right, var(--verde-oscuro), var(--verde-claro));
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 3%; 
+}
+
+.elementos {
+    list-style: none;
+    padding: 10px 20px;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.elementos:hover {
+    background-color: var(--blanco);
+    color: var(--rojo-navidad);
+    cursor: pointer;
+    transform: translateY(-2px); 
+}
+
+/* --- Layout Principal --- */
+#display {
+    display: flex;
+    gap: 4%;
+    width: 90%; 
+    margin: 30px auto; 
+    padding: 0 2%;
+    align-items: flex-start; 
+}
+
+/* --- Formulario--- */
+aside {
+    width: 33%;
+    background-color: var(--blanco);
+    padding: 30px;
+    border-radius: 15px; 
+    box-shadow: var(--sombra-suave);
+    border-top: 5px solid var(--rojo-navidad); 
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--verde-oscuro);
+    border-bottom: 2px dashed var(--oro);
+    padding-bottom: 10px;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background-color: var(--gris-fondo);
+    font-size: 16px;
+    width: 100%;
+}
+
+.boton-navidad {
+    background: linear-gradient(45deg, var(--rojo-navidad), var(--rojo-oscuro));
+    color: var(--blanco);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* --- Main --- */
+main {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#info-general, #info-evento {
+    background-color: var(--blanco);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--sombra-suave);
+    border-left: 5px solid var(--verde-oscuro);
+}
+
+
+#info-general ul, #info-evento ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#info-evento {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* --- Galería --- */
+#galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%; 
+}
+
+.caja-foto {
+    width: 32%;
+    background-color: var(--blanco);
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: var(--sombra-suave);
+}
+
+.caja-foto img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* --- Sección de Premios --- */
+#seccion-premios {
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--blanco);
+    border-radius: 15px;
+    box-shadow: var(--sombra-suave);
+    text-align: center;
+}
+
+#lista-premios {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 25px;
+    flex-wrap: wrap; 
+}
+
+.tarjeta-premio {
+    width: 30%;
+    min-width: 260px;
+    background-color: var(--blanco);
+    border: 2px solid var(--oro);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    color: var(--blanco);
+    padding: 40px 20px;
+    background-color: var(--verde-oscuro);
+    margin-top: 40px;
+}
+
+/* --- Media Queries --- */
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    #encabezado {
+        padding: 5px 4%;
+    }
+    #Titulo {
+        font-size: 32px;
+    }
+    #logo img {
+        max-height: 70px;
+    }
+
+    #galeria {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; 
+    }
+
+    .caja-foto {
+        width: 45%; 
+        margin-bottom: 10px;
+    }
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+
+    #encabezado {
+        padding: 5px 3%;
+        justify-content: space-between;
+    }
+    
+    #Titulo {
+        font-size: 20px; 
+        letter-spacing: 1px;
+        text-align: left;
+        width: 70%;
+    }
+    
+    #logo {
+        width: 25%;
+    }
+    
+    #logo img {
+        max-height: 45px; 
+    }
+
+    .elementos {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    #display {
+        flex-direction: column;
+        width: 95%;
+        margin-top: 15px;
+        gap: 20px;
+    }
+
+    aside {
+        width: 100%;
+        order: 2; 
+    }
+
+    main {
+        width: 100%;
+        order: 1;
+    }
+    
+    #info-evento {
+        width: 100%;
+    }
+
+    #galeria {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .caja-foto {
+        width: 100%;
+    }
+
+    #lista-premios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-premio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

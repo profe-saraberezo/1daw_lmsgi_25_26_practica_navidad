@@ -1,0 +1,323 @@
+/* */
+:root {
+	--verdeOscuro: #2F4A3D;
+	--verdeClaro: #5A6B4F;
+	--rojo: #8C2F2B;
+	--amarillo: #F2C94C;
+	--azul: #2E3F50;
+    --crema: #F5E3BF;
+    --azulClaro: #263F56;
+
+}
+
+* {	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    
+	
+}
+
+.fontTitulos {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+#general{
+    margin: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0,8rem;
+    background-color: var(--verdeOscuro);
+    
+}
+.flexear{
+    display: flex;
+    
+}
+
+.rojoCentrar{
+    border: 2px solid red;
+}
+
+.textoCentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+}
+
+/*OOOOOOOOO
+Titulo pagina
+OOOOOOOOO*/
+#cuadroTitulo{
+    width: 100%;
+    height: 150px;
+    font-size: 3rem;
+    background-color: var(--rojo);
+    color: var(--amarillo);
+    text-align: center;
+    border: 0.1rem solid var(--amarillo);
+
+}
+.flexearTitulo{
+    display: flex;
+
+}
+
+/*OOOOOOOOO
+Arbol e imagenes
+galeria 
+OOOOOOOOO*/
+#cuadroImagenes{
+    width: 100%;
+    height: 6rem;
+    font-size: 2rem;
+    background-color: var(--rojo);
+    color: var(--amarillo);
+    border: 0.1rem solid var(--amarillo);
+}
+.flexearArbolGaleria{
+    display: flex;
+        
+}
+
+.seccionArbol{
+    width: 60%;
+    display: flex;
+    flex-direction: column; /*Para que haga el flex en vertical en vez de en horizontal*/
+    align-items: center;
+    padding-bottom: 5%; /*PREGUNTAR QUE UNIDAD USAR*/
+    background-color: var(--azulClaro);
+    border: 0.1rem solid var(--amarillo);
+}
+.seccionGaleria{
+    width: 40%;
+    background-color: var(--azulClaro);
+    border: 0.1rem solid var(--amarillo);
+    
+}
+.cuadroGaleria{
+    width: 100%;
+    margin: 1rem; /*PREGUNTAR QUE UNIDAD USAR*/
+    
+}
+
+.azulGaleria{
+    border: 2px solid blue;
+}
+#estrella{
+    font-size: 70px;
+    color: var(--amarillo);
+}
+#triangulo{
+    width: 70%;
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+          
+}
+
+#trapecioPequeno{
+    width: 80%;
+    height: 230px;
+    border-radius: 20px 20px 0 0;
+    
+}
+#trapecioGrande{
+    width: 90%;
+    height: 330px;
+    border-radius: 20px;
+    
+}
+.textoArbol{
+    /*PREGUNTAR SI ESTA BIEN METIDO EN UNA MISMA CLASE*/ 
+    background: #5A6B4F;
+    border-bottom: 20px solid #2F4A3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    color: var(--crema);
+    
+}
+.flexearGaleria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*OOOOOOOOO
+Requisitos y
+formulario
+OOOOOOOOO*/
+
+.seccionRequisitos{
+    width: 40%;
+    padding: 2rem;
+    background-color: var(--rojo);
+    color: var(--amarillo);
+    border: 0.1rem solid var(--amarillo);
+
+}
+.listaRequisitos{
+    list-style-type: square;
+
+}
+.formulario{
+    width: 60%;
+    background-color: var(--azulClaro);
+    color: var(--crema);
+    border: 0.1rem solid var(--amarillo);
+}
+.flexearRequisitosFormulario{
+    display: flex;
+
+}
+.flexearInscripcion{
+    display: flex;
+    border: 0.1rem solid var(--amarillo);
+
+}
+.margenInscripcion{
+    margin: 1rem;
+    
+}
+.centrarObservaciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+}
+/*OOOOOOOOO
+Footer
+OOOOOOOOO*/
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--rojo);
+    color: var(--amarillo);
+    border: 0.1rem solid var(--amarillo);
+
+}
+
+
+
+/* TABLET */
+
+
+
+@media(max-width: 768px){
+    #general{
+        font-size: 1rem;
+
+    }
+    .flexearTitulo{
+        display: flex;
+        flex-direction: column;
+    }
+    #cuadroTitulo{
+        width: 100%;
+    }
+    #cuadroImagenes{
+        width: 100%;
+    }
+    .flexearArbolGaleria{
+        display: flex;
+        flex-direction: column;
+    }
+    .seccionArbol{
+        width: 100%;
+    }
+    .seccionGaleria{
+        width: 100%;
+    }
+    /*OOOOOOOOO
+    Requisitos y
+    formulario
+    OOOOOOOOO*/
+    .flexearRequisitosFormulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .seccionRequisitos{
+        width: 100%;
+        text-align: center;
+      
+    }
+    .listaRequisitos{
+        list-style-type: none;
+    
+}
+    .formulario{
+        width: 100%;
+    }
+}
+
+
+
+
+/* MOVIL */
+
+
+
+
+@media(max-width: 400px){
+
+    #general{
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+
+    }
+    .flexearTitulo{
+        display: flex;
+        flex-direction: column;
+    }
+    #cuadroTitulo{
+        width: 100%;
+        font-size: 2rem;
+    }
+    #cuadroImagenes{
+        width: 100%;
+    }
+    .flexearArbolGaleria{
+        display: flex;
+        flex-direction: column;
+    }
+    .seccionArbol{
+        width: 100%;
+    }
+    .seccionGaleria{
+        width: 100%;
+    }
+    /*OOOOOOOOO
+    Requisitos y
+    formulario
+    OOOOOOOOO*/
+    .flexearRequisitosFormulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .seccionRequisitos{
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .flexearInscripcion{
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
+
+    
+
+

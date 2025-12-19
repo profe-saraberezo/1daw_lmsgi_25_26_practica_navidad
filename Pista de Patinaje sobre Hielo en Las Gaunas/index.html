@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Pista de Patinaje sobre Hielo - Logroño</title>
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+  <header>
+    <img src="img/icono.png" alt="icono" id="ico">
+	<h1>Pista de Patinaje sobre Hielo en Las Gaunas</h1>
+    <h2>Actividad Navideña para Jóvenes - Ayuntamiento de Logroño</h2>
+  </header>
+
+  <main>
+    <!-- Descripción -->
+    <section class="descripcion">
+      <h3>Descripción de la actividad</h3>
+      <p>
+        Ven a disfrutar de la magia de la Navidad en la pista de patinaje sobre hielo 
+        instalada en el Estadio de Las Gaunas. Una experiencia divertida, segura y 
+        pensada para jóvenes de la ciudad de Logroño.
+      </p>
+      <!-- Foto debajo del texto -->
+      <img src="img/Las_Gaunas.jpg" alt="Las gaunas" class="foto-descripcion">
+    </section>
+
+    <!-- Imágenes -->
+    <section class="imagenes">
+      <h3>Ediciones anteriores</h3>
+      <div class="galeria">
+        <!-- Imagenes anteriores -->
+        <img src="img/f1.jpg" alt="Foto edición anterior 1">
+        <img src="img/f2.jpg" alt="Foto edición anterior 2">
+        <img src="img/f3.webp" alt="Foto edición anterior 3">
+      </div>
+    </section>
+
+    <!-- Requisitos -->
+    <section class="requisitos">
+      <h3>Requisitos de inscripción</h3>
+      <ul>
+        <li>Edad: entre 12 y 25 años</li>
+        <li>Condiciones físicas: buena movilidad y salud general</li>
+        <li>Empadronamiento: estar empadronado en Logroño</li>
+      </ul>
+    </section>
+
+    <!-- Formulario -->
+    <section class="formulario">
+      <h3>Formulario de inscripción</h3>
+      <form>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+		<label for="Correo">Correo electronico:</label>
+        <input type="email" id="correo" name="correo" placeholder="@gmail.com" required>
+		<label for="telefono">Teléfono:</label><br>
+		<input type="tel" id="telefono" name="telefono" pattern="[0-9+ ]{6,15}" placeholder="123456789" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="grupo">¿Vienes en grupo?</label>
+        <select id="grupo" name="grupo">
+          <option value="no">No</option>
+          <option value="2-5">Grupo de 2-5 personas</option>
+          <option value="6-10">Grupo de 6-10 personas</option>
+        </select>
+
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones"></textarea>
+
+        <button type="submit">Inscribirse</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Ayuntamiento de Logroño</p>
+    <p>📍 Plaza del Ayuntamiento, 26000 Logroño</p>
+    <p>📞 Tel: 941 27 70 00</p>
+    <p>✉️ Email: juventud@logrono.es</p>
+  </footer>
+</body>
+</html>
+

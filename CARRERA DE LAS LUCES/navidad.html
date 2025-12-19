@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<HTML lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción Grupal Navideña</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div id="encabezado">
+            <h1 id="Titulo"> CARRERA DE LAS LUCES </h1>
+            <img id="logo" src="img/logo.png" alt="Corredores">
+        </div>
+        <nav>
+            <ul id="menu">
+                <li class="elementos">Inicio</li>
+                <li class="elementos">Recorrido</li>
+                <li class="elementos">Premios</li>
+                <li class="elementos">Reglamento</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="display">
+        <aside>
+            <h2>Inscripción de Grupos</h2>
+            <form action="#" method="post" id="formulario">
+
+                <label for="equipo">Nombre del Equipo:</label>
+                <input type="text" id="equipo" name="equipo" placeholder="Ej: Los Renos Veloces">
+
+                <label for="responsable">Nombre del Capitán:</label>
+                <input type="text" id="responsable" name="responsable" placeholder="Persona responsable">
+
+                <label for="email">Email de contacto:</label>
+                <input type="email" id="email" name="email" placeholder="contacto@equipo.com">
+
+                <label for="participantes">Nº de Corredores:</label>
+                <input type="number" id="participantes" name="participantes" min="2" max="20" placeholder="Mínimo 2">
+
+                <label for="categoria">Categoría del Grupo:</label>
+                <select id="categoria" name="categoria">
+                    <option value="empresa">Adultos - 10km</option>
+                    <option value="amigos">Juvenil - 5km</option>
+                    <option value="familiar">Familiar - Paseo</option>
+                </select>
+
+                <button type="submit" class="boton-navidad">¡INSCRIBIR EQUIPO!</button>
+            </form>
+        </aside>
+
+        <main>
+            <section id="info-general">
+                <h3 class="titulo1">Logroño enciende su magia</h3>
+                <div id="texto-info">
+                    <p>
+                        Este diciembre, nuestro emblemático parque se transforma por completo al apagar su alumbrado
+                        convencional para dar paso a la magia de la Navidad. La "Carrera de las Luces" no es solo una
+                        competición atlética, sino una experiencia sensorial nocturna diseñada para que deportistas y
+                        familias vivan el espíritu festivo de una forma activa y emocionante. Al caer el sol, el entorno
+                        se convierte en un escenario vibrante donde la superación personal y la alegría de las fiestas
+                        se fusionan bajo el cielo estrellado, creando un recuerdo imborrable para todos los asistentes.
+                    </p>
+
+                    <p>
+                        A lo largo de todo el trayecto, los corredores se verán envueltos en una atmósfera inigualable,
+                        avanzando bajo espectaculares arcos de luces LED que parpadean en sintonía con una selección de
+                        música festiva. Cada kilómetro del recorrido ha sido cuidadosamente decorado para crear un túnel
+                        de color y luz que guiará tus pasos, mientras diferentes estaciones de sonido animan el camino
+                        con ritmos contagiosos. Este despliegue técnico y artístico busca que cada participante sienta
+                        la calidez de la temporada en cada zancada, convirtiendo el esfuerzo físico en una auténtica
+                        celebración visual.
+                    </p>
+
+
+                </div>
+            </section>
+
+            <section id="galeria">
+                <div class="caja-foto">
+                    <img src="img/foto1.png" alt="Corredores">
+
+                </div>
+                <div class="caja-foto">
+                    <img src="img/foto2.webp" alt="Luces">
+
+                </div>
+                <div class="caja-foto">
+                    <img src="img/foto3.jpg" alt="Meta">
+
+                </div>
+            </section>
+        </main>
+    </div>
+    <section id="info-evento">
+        <h3 class="titulo1">Información y Consejos</h3>
+        <div id="texto-info">
+            <h4>📍 Datos del Evento</h4>
+            <hr>
+            <ul class="datos-interes">
+                <li><strong>Ubicación:</strong> Parque San Miguel, Logroño (La Rioja). Punto de encuentro en la pérgola
+                    central.</li>
+                <li><strong>Teléfono de contacto:</strong> 941 23 45 67 (Lunes a Viernes de 9:00 a 14:00).</li>
+                <li><strong>Email:</strong> info@logronoluces.es</li>
+                <li><strong>Horario:</strong> Apertura de zona de corredores a las 18:30h. Salida oficial a las 20:00h.
+                </li>
+            </ul>
+            <hr>
+            <h4>✨ Recomendaciones para Corredores</h4>
+            <hr>
+            <p class="datos-interes">
+                <strong>Visibilidad:</strong> Dado que la carrera es nocturna, recomendamos el uso de prendas técnicas
+                de colores claros o con elementos reflectantes. La organización entregará una pulsera LED luminosa con
+                el dorsal.
+            </p>
+            <p class="datos-interes">
+                <strong>Climatología:</strong> Las noches de diciembre en Logroño suelen ser frías. Es aconsejable
+                vestir por capas (sistema de "cebolla") y llevar una prenda cortavientos que puedas quitarte tras el
+                calentamiento.
+            </p>
+            <p class="datos-interes">
+                <strong>Seguridad:</strong> El recorrido transcurre por senderos asfaltados y zonas de parque. Presta
+                atención a las señales luminosas y a las indicaciones de los voluntarios en los cruces de caminos.
+            </p>
+            <p class="datos-interes">
+                <strong>Sostenibilidad:</strong> El Parque San Miguel es un entorno natural protegido. Por favor,
+                utiliza los contenedores habilitados en los puntos de avituallamiento para depositar botellas y
+                envoltorios.
+            </p>
+        </div>
+    </section>
+    <section id="seccion-premios">
+        <h2 class="titulo1">Premios y Regalos</h2>
+        <div id="lista-premios">
+
+            <div class="tarjeta-premio">
+                <h3>Adultos (10km)</h3>
+                <p class="detalle">Para los 3 primeros:</p>
+                <p class="regalo">Gran Cesta Navideña</p>
+            </div>
+
+            <div class="tarjeta-premio">
+                <h3>Juvenil (5km)</h3>
+                <p class="detalle">10 primeros clasificados:</p>
+                <p class="regalo">Entradas Concierto Navideño</p>
+
+            </div>
+
+            <div class="tarjeta-premio">
+                <h3>Paseo Familiar</h3>
+                <p class="detalle">Para todos:</p>
+                <p class="regalo">Gorro de Navidad</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+    <footer>
+        <p>
+            &copy; 2025 Eventos Deportivos Navideños La Rioja - "Corre bajo las estrellas"
+        </p>
+    </footer>
+
+
+</body>
+
+</HTML>

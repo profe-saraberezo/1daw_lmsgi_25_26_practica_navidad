@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad Navideña Joven · Ayuntamiento</title>
+  <link rel="stylesheet" href="css/CSSActividadNavidad.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Ruta Joven de Navidad</h1>
+        <p>Actividad organizada por el Ayuntamiento de Logroño para jóvenes de la ciudad</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Descripción de la actividad</h2>
+            <p>
+                La Ruta Joven de Navidad es una actividad nocturna en la que los jóvenes recorrerán el centro de la ciudad
+                participando en pruebas, juegos y retos por equipos. La actividad finalizará con una merienda navideña.
+            </p>
+        </section>
+
+        <section id="imagenes">
+            <h2>Ediciones anteriores</h2>
+            <img src="img\foto1.webp" alt="Edición anterior">
+            <img src="img\foto2.webp" alt="Edición anterior">
+            <img src="img\foto3.jpg" alt="Edición anterior">
+        </section>
+
+        <section>
+            <h2>Requisitos de inscripción</h2>
+            <ul>
+                <li>Edad entre 14 y 21 años</li>
+                <li>Condición física básica (actividad de intensidad moderada)</li>
+                <li>Preferencia para jóvenes empadronados en la ciudad</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Formulario de inscripción</h2>
+            
+            <form>
+                <label>
+                    Nombre y apellidos
+                    <input type="text" required>
+                </label>
+
+                <label>
+                    Edad
+                    <input type="number" min="14" max="21" required>
+                </label>
+
+                <label>
+                    ¿Te apuntas en grupo?
+                    <!-- Desplegable de "Sí" o "No"-->
+                    <select>
+                        <option value="no">No</option>
+                        <option value="si">Sí</option>
+                    </select>
+                </label>
+
+                <label>
+                    Nombre del grupo
+                    <input type="text">
+                </label>
+
+                <label>
+                    Observaciones
+                    <textarea rows="4"></textarea>
+                </label>
+
+                <button type="submit">Inscribirme</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Ayuntamiento de Logroño</strong></p>
+        <p>Tel: 900 123 456</p>
+        <p>Email: juventud@logroño.es</p>
+    </footer>
+</body>
+</html>

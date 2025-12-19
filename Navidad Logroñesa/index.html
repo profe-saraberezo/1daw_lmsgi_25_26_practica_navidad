@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad Riojana</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Navidad Logroñesa</h1>
+        <p>Una aventura en nuestra ciudad para estas Navidades.</p>
+    </header>
+
+    <main>
+        <section id="descripcion">
+            <h2>¿En qué consiste?</h2>
+            <p>
+                El taller de casas y figuras de jengibre es un espacio creativo y festivo donde el aroma de las especias
+                llena el ambiente.
+                Los participantes elaboran y decoran casas y personajes con glaseado y dulces, dando forma a pequeñas
+                creaciones llenas de color.
+                Es una actividad que une tradición, imaginación y diversión. Tendrá lugar el día 26 de Diciembre a las 16:00 en la Plaza del Mercado.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ediciones anteriores</h2>
+            <div id="galeria">
+                <img src="imgs/niños.jpg" alt="Edición anterior 1">
+                <img src="imgs/muñeco de jengibre1.jpg" alt="Edición anterior 2">
+                <img src="imgs/niños2.jpeg" alt="Edición anterior 3">
+            </div>
+        </section>
+
+        <section id="contenedor">
+            <article id="requisitos">
+                <h2>Requisitos de inscripción</h2>
+                <ul>
+                    <li><strong>Edad:</strong> De 14 a 25 años.</li>
+                    <li><strong>Condiciones físicas:</strong> Informar en la inscripción sobre alergias alimentarias o
+                        necesidades especiales.</li>
+                    <li><strong>Empadronamiento:</strong> Al menos una persona del grupo debe estar empadronada en el
+                        municipio.
+                    </li>
+                    <li><strong>Grupos:</strong> Equipos de entre 2 y 5 personas.</li>
+                </ul>
+            </article>
+
+            <article id="formulario">
+                <h2>Formulario de inscripción</h2>
+                <form>
+                    <div class="campo">
+                        <label for="nombre">Nombre del responsable</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefono">Teléfono de contacto</label>
+                        <input type="tel" id="telefono">
+                    </div>
+
+                    <div class="campo">
+                        <label for="grupo">¿Participas en grupo?</label>
+                        <select id="grupo">
+                            <option value="individual">Individual</option>
+                            <option value="grupo">Grupo</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="numPersonas">Número de personas (si es grupo)</label>
+                        <input type="number" id="numPersonas" min="2" max="5">
+                    </div>
+
+                    <div class="campo">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea id="observaciones"
+                            placeholder="Alergias, necesidades especiales, dudas..."></textarea>
+                    </div>
+
+                    <button type="submit">Enviar inscripción</button>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Ayuntamiento de Logroño</strong></p>
+        <p>Plaza del Mercado, 5 · 26005 Logroño</p>
+        <p>Tel: 674 825 673 · actividades@logroño.es</p>
+    </footer>
+
+</body>
+
+</html>

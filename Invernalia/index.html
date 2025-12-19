@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❄Invernalia❄</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@500;900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <header>
+        <div id="headercaja">
+            <div id="Tarjeta">LOGROÑO JOVEN</div>
+            <h1>❄Invernalia❄</h1>
+            <h3>La fiesta más Navideña del año</h3>
+        </div>
+    </header>
+
+    <div id="Contenido">
+
+        <div id="Contenedores">
+
+            <div id="info">
+                <div id="info-contenido">
+                    <h2>Celebra la Navidad <br>
+                        <div id="hielo">sobre Hielo</div>
+                    </h2>
+                    <div id="divisor">🎄⛸️🎄⛸️🎄</div>
+                    <p>
+                        El C.D.M. Lobete se viste de gala. Hemos preparado la sesión de patinaje más especial del año
+                        con
+                        <strong>música en directo, regalos y el mejor ambiente neon-disco</strong>.
+                    </p>
+                    <p>
+                        <b>¿El plan?</b> Ven con tus amigos, ponte el jersey navideño más hortera y participa en nuestro
+                        concurso.
+                    </p>
+                </div>
+                <div>
+                    <img src="img/info.jpg" alt="FotoInfo">
+                </div>
+            </div>
+
+            <div id="Datos">
+                <h2>INFO CLAVE</h2>
+                <div id="divisordatos">--------</div>
+
+                <div id="Contenedor1">
+                    <div class="cajas">
+                        <div class="iconos">📅</div>
+                        <strong>28 DIC</strong>
+                        <div class="extra">21:00 - 02:00</div>
+                    </div>
+                    <div class="cajas">
+                        <div class="iconos">📍</div>
+                        <strong>LOBETE</strong>
+                        <div class="extra">Pista de hielo</div>
+                    </div>
+                    <div class="cajas">
+                        <div class="iconos">💶</div>
+                        <strong>3 EUROS</strong>
+                        <div class="extra">+18 (DNI físico)</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="AnteriorAños">
+            <div id="titulofotos">
+                <h2>MOMENTOS MÁGICOS</h2>
+                <div>📷 🌟 📷</div>
+            </div>
+
+            <div id="cajasfotos">
+                <div><img src="img/Galeria1.jpg" alt="Ganador"></div>
+                <div><img src="img/Galeria3.jpg" alt="Pista"></div>
+                <div><img src="img/Galeria2.jpg" alt="Photocall"></div>
+            </div>
+        </div>
+    </div>
+    <div id="Formulario">
+        <div id="tituloformulario">
+            <h2>Únete a la fiesta</h2>
+        </div>
+
+        <form id="miformulario">
+
+            <div id="filasuperior">
+                <div class="infoformulario">
+                    <label for="nombre">NOMBRE REPRESENTANTE</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="infoformulario">
+                    <label for="email">EMAIL CONTACTO</label>
+                    <input type="email" id="email" placeholder="tucorreo@email.com" required>
+                </div>
+            </div>
+
+            <div id="filagrupo">
+                <div class="infoformulario">
+                    <label for="tipo-entrada">TIPO INSCRIPCIÓN</label>
+                    <select id="tipo-entrada">
+                        <option value="individual">Individual</option>
+                        <option value="grupo">Grupo</option>
+                    </select>
+                </div>
+                <div class="infoformulario">
+                    <label for="numero-personas">Nº PERSONAS</label>
+                    <input type="number" id="numero-personas" value="1" min="1" max="50">
+                </div>
+            </div>
+
+            <div class="infoformulario" id="lista-participantes">
+                <label for="participantes">NOMBRES ASISTENTES</label>
+                <textarea id="participantes"
+                    placeholder="Escribe los nombres separados por comas (Ej: Lucía, Marcos, Elena...)"></textarea>
+                <small>Obligatorio para el control de acceso.</small>
+            </div>
+
+            <div class="infoformulario">
+                <label for="observaciones">OBSERVACIONES</label>
+                <textarea id="observaciones"
+                    placeholder="¿Alguna petición especial para el DJ?, Algo a tener en cuenta, Alguna mejora..."></textarea>
+            </div>
+
+            <button type="submit" id="boton-enviar">ENVIAR INSCRIPCIÓN</button>
+        </form>
+    </div>
+    <footer>
+        <div id="footer">
+            <div class="footercontenido">
+                <h3>LOGROÑO JOVEN</h3>
+                <p>Ayuntamiento de Logroño</p>
+                <div id="redessociales">
+                    <div>IG</div>
+                    <div>TW</div>
+                    <div>FB</div>
+                </div>
+            </div>
+
+            <div class="footercontenido">
+                <h3>CONTACTO</h3>
+                <p>📍 Ayuntamiento Logroño, Av. de la Paz, 11</p>
+                <p>📞 436 758 654</p>
+                <p>📧 infojoven@logrono.es</p>
+            </div>
+
+            <div class="footercontenido">
+                <h3>LEGAL</h3>
+                <a href="#">Aviso Legal</a>
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Accesibilidad</a>
+            </div>
+        </div>
+        <div id="copyright">
+            &copy; 2025 Invernalia
+        </div>
+    </footer>
+</body>
+
+</html>

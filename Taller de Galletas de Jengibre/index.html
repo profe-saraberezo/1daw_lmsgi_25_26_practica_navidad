@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de Galletas de Jengibre</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="cabecera">
+    <div id="contenido-cabecera">
+      <img src="img/logo.png" alt="Muñeco de galleta de jengibre" id="logo">
+
+      <div id="texto-cabecera">
+        <h1>Taller de Galletas de Jengibre</h1>
+        <p>Actividad navideña organizada por el Ayuntamiento de Logroño</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="contenido">
+
+    <section id="descripcion">
+      <h2>Descripción</h2>
+      <p>
+        El Ayuntamiento de Logroño organiza un taller navideño donde los participantes
+        aprenderán a elaborar y decorar galletas de jengibre. Es una actividad pensada
+        para todas las edades, ideal para disfrutar en familia y fomentar el espíritu
+        navideño.
+      </p>
+    </section>
+    <!-- GALERIA DE IMAGENES -->
+    <section id="galeria">
+      <img src="img/taller1.jpg" alt="Galletas de jengibre decoradas">
+      <img src="img/taller2.jpg" alt="Muñeco de galleta de jengibre">
+      <img src="img/taller3.jpg" alt="Decoración de galletas navideñas">
+    </section>
+    <!-- REQUISITOS -->
+    <section id="requisitos">
+      <h2>Requisitos</h2>
+      <ul>
+        <li>Llevar delantal</li>
+        <li>Traer moldes para galletas</li>
+        <li>Ganas de aprender y pasarlo bien</li>
+      </ul>
+    </section>
+    <!-- FORMULARIO  DE INSCRIPCION -->
+    <section id="inscripcion">
+      <h2>Formulario de inscripción</h2>
+
+      <form id="form-inscripcion">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="tel" name="telefono" placeholder="Número de teléfono">
+        <textarea  id="observaciones" placeholder="Observaciones/Comentarios"></textarea>
+        <label id="grupo">¿Te apuntas en grupo?
+          <input type="radio" name="grupo" value="Si" id="si">
+          <label for="si">Sí</label>
+          <input type="radio" name="grupo" value="No" id="no">
+          <label for="no">No</label>
+        </label>
+        <button type="submit">Enviar inscripción</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="pie-pagina">
+    <img src="img/logrono.png" alt="Logo del Ayuntamiento de Logroño">
+
+    <div>
+      <p><strong>+34667856742

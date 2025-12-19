@@ -1,0 +1,304 @@
+/* ========================================================
+   PALETA DE COLORES
+   ======================================================== */
+:root {
+  --rojo-navidad: #b71c1c;       /* Color principal: header y botones */
+  --blanco: #ffffff;            /* Fondo del contenido principal */
+  --gris-fondo: #f5f5f5;        /* Fondo general del body */
+  --gris-texto: #333333;        /* Color del texto */
+  --gris-footer: #eeeeee;       /* Fondo del footer */
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;       
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================================================
+   BODY
+   ======================================================== */
+/* Estilos generales aplicados a toda la página */
+body {
+  background-color: var(--gris-fondo); 
+  background-image: url("../img/fondocuerpo.png"); /* Imagen de fondo */
+  background-size: cover;             /* Cubre toda la pantalla */
+  background-repeat: no-repeat;       /* No se repite */
+  background-position: center;        /* Centrada */
+  background-attachment: fixed;       /* Fija el fondo al hacer scroll */
+  color: var(--gris-texto);            /* Color de texto general */
+}
+
+/* ========================================================
+   CURSOR DE LA PÁGINA
+   ======================================================== */
+/* Cambia el cursor en toda la web */
+body {
+  cursor: url("../img/cursor.png"), auto;
+}
+
+/* ========================================================
+   HEADER
+   ======================================================== */
+/* Estilo del encabezado principal */
+#cabecera {
+  background-color: var(--rojo-navidad); /* Fondo rojo navideño */
+  color: var(--blanco);                  /* Texto blanco */
+  padding: 25px 0;                       /* Espaciado vertical */
+}
+
+/* Contenedor interno del header */
+#contenido-cabecera {
+  max-width: 1100px;          /* Ancho máximo */
+  margin: 0 auto;             /* Centrado horizontal */
+  display: flex;              /*  alinear elementos */
+  align-items: center;        /* Centrado vertical */
+  justify-content: center;    /* Centrado horizontal */
+  gap: 20px;                  /* Espacio entre logo y texto */
+}
+
+/* Logo del header */
+#logo {
+  width: 70px;                /* Tamaño del logo */
+  height: auto;               /* Mantiene proporción */
+}
+
+/* Título principal del header */
+#texto-cabecera h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Subtítulo del header */
+#texto-cabecera p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* ========================================================
+   CONTENIDO PRINCIPAL
+   ======================================================== */
+/* Caja blanca donde va el contenido */
+#contenido {
+  max-width: 1300px;           /* Ancho máximo */
+  width: 90%;                  /* Adaptable a pantalla */
+  margin: 40px auto;           /* Centrado con separación */
+  padding: 40px;               /* Espacio interno */
+  background-color: var(--blanco);
+  border-radius: 6px;          /* Bordes redondeados */
+}
+
+/* ========================================================
+   SECCIONES
+   ======================================================== */
+/* Separación entre secciones */
+#descripcion,
+#requisitos,
+#inscripcion {
+  margin-bottom: 40px;
+}
+
+/* Texto de la descripción */
+#descripcion p {
+  line-height: 1.6;            /* Mejora legibilidad */
+}
+
+/* Títulos de secciones */
+#contenido h2 {
+  color: var(--rojo-navidad);
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+
+/* ========================================================
+   GALERÍA
+   ======================================================== */
+/* Contenedor de imágenes */
+#galeria {
+  display: flex;               /* Imágenes en fila */
+  gap: 20px;                   /* Espacio entre ellas */
+  justify-content: center;     /* Centrado */
+  margin-bottom: 40px;
+  flex-wrap: wrap;             /* Salto de línea si no caben */
+}
+
+/* Imágenes de la galería */
+#galeria img {
+  width: 100%;
+  max-width: 300px;            /* Tamaño máximo */
+  border-radius: 10px;         /* Bordes redondeados */
+}
+
+/* ========================================================
+   REQUISITOS
+   ======================================================== */
+/* Quita los puntos de la lista */
+#requisitos ul {
+  list-style: none;
+}
+
+/* Espaciado entre requisitos */
+#requisitos li {
+  margin-bottom: 10px;
+}
+
+/* ========================================================
+   FORMULARIO
+   ======================================================== */
+/* Contenedor del formulario */
+#form-inscripcion {
+  display: flex;
+  flex-direction: column;      /* Elementos en columna */
+  gap: 15px;
+}
+
+/* Campos del formulario */
+#form-inscripcion input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Botón del formulario */
+#form-inscripcion button {
+  padding: 15px;
+  background-color: var(--rojo-navidad);
+  color: var(--blanco);
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*Darle formato al select ya que no tien placeholder */
+#grupo
+{
+  width: 100%;
+  margin-bottom: 7px;
+  font-size: 16px;
+  font-family: inherit;
+  color: grey;
+}
+
+/* Quitar estilo por defecto del select */
+#form-inscripcion select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Color tipo placeholder */
+#form-inscripcion select:invalid {
+  color: #999;
+}
+
+#form-inscripcion option {
+  color: #000;
+}
+
+
+
+/* ========================================================
+   FOOTER
+   ======================================================== */
+/* Pie de página */
+#pie-pagina {
+  background-color: var(--gris-footer);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Logo del footer */
+#pie-pagina img {
+  width: 70px;
+}
+
+/* Texto del footer */
+#pie-pagina p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ========================================================
+   RESPONSIVE
+   ======================================================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  #contenido {
+    max-width: 95%;
+    padding: 35px;
+  }
+
+  #galeria {
+    gap: 15px;
+  }
+
+  #galeria img {
+    max-width: 45%;
+  }
+
+  #contenido-cabecera {
+    flex-direction: row;       /* Logo y texto en fila */
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* Móviles y pantallas pequeñas */
+@media (max-width: 768px) {
+  #contenido {
+    width: 95%;
+    padding: 25px;
+  }
+
+  #contenido-cabecera {
+    flex-direction: column;    /* Apila logo y texto */
+    text-align: center;
+    gap: 10px;
+  }
+
+  #galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #galeria img {
+    max-width: 100%;
+  }
+
+  #form-inscripcion input,
+  #form-inscripcion button {
+    width: 100%;
+  }
+}
+
+/* Smartphones muy pequeños */
+@media (max-width: 480px) {
+  #cabecera h1 {
+    font-size: 24px;
+  }
+
+  #cabecera p {
+    font-size: 14px;
+  }
+
+  #contenido h2 {
+    font-size: 24px;
+  }
+
+  #form-inscripcion input,
+  #form-inscripcion button {
+    font-size: 14px;
+  }
+}
